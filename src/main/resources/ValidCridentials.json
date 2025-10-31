@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Mazen Adel",
+    "email" : "AccountMazenTesting@pexiun.com",
+    "password" : "v99ztYi3He@5FmV" ,
+    "day": "21",
+    "month": "July",
+    "year": "2000",
+    "firstName": "Mazen",
+    "lastName": "Adel",
+    "company": "Testing Company",
+    "address": "Alexandria",
+    "country": "United States",
+    "state": "New York",
+    "city": "Miami",
+    "zip": "66001",
+    "mobileNumber": "+20789456123",
+    "firstProductName" : "Printed Off Shoulder Top - White",
+    "firstProductPrice" : "Rs. 315",
+    "firstProductQuantity" : "2",
+    "secondProductName" : "Madame Top For Women",
+    "secondProductPrice" : "Rs. 1000",
+    "secondProductQuantity" : "1",
+    "thirdProductName" : "Blue Cotton Indie Mickey Dress",
+    "thirdProductPrice" : "Rs. 1530",
+    "thirdProductQuantity" : "1",
+    "cardName" : "AlAhly Card",
+    "cardNumber" : "1000348138927364",
+    "cvc" : "735",
+    "expiryMonth" : "07",
+    "expiryYear" : "2030"
+  }
+]
