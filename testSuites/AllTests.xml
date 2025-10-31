@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite">
+    <listeners>
+        <listener class-name="AutomationExerciseWebsite.TestComponents.Listeners"></listener>
+    </listeners>
+    <test name="Login Validation Tests" >
+        <classes>
+            <class name="AutomationExerciseWebsite.PageTests.LoginFeatureTests"></class>
+        </classes>
+    </test>
+    <test name="Error Validations Tests" >
+        <classes>
+            <class name="AutomationExerciseWebsite.PageTests.ErrorValidationsTests"></class>
+        </classes>
+    </test>
+    <test name="End-To-End Tests" >
+        <classes>
+            <class name="AutomationExerciseWebsite.PageTests.OrderTests"></class>
+        </classes>
+    </test>
+</suite>

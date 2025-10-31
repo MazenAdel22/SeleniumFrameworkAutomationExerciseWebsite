@@ -15,7 +15,7 @@ public class OrderTests extends BaseTest {
     @Test (dataProviderClass = DataProviderImp.class, dataProvider = "getValidData")
     public void subscriptionTest(HashMap<String,String> input) {
         Assert.assertEquals(homePage.getSubscriptionTitle(), "SUBSCRIPTION");
-        homePage.enterSubscriptionEmail(input.get("email"));
+        homePage.enterSubscriptionEmail(input.get("ExistingEmail"));
         Assert.assertEquals(homePage.getSubscriptionSuccessMessage(), "You have been successfully subscribed!");
     }
 
@@ -42,7 +42,7 @@ public class OrderTests extends BaseTest {
     @Test (dataProviderClass = DataProviderImp.class, dataProvider = "getValidData")
     public void endToEndTest(HashMap<String,String> input) {
         SignUpAndLoginPage signUpAndLoginPage = homePage.goToSignUpLoginPage();
-        signUpAndLoginPage.fillLoginForm(input.get("email"), input.get("password"));
+        signUpAndLoginPage.fillLoginForm(input.get("ExistingEmail"), input.get("password"));
         homePage.addProductToCart(input.get("firstProductName"));
         Assert.assertEquals(homePage.getAddedToCartMessage(), "Added!");
         homePage.clickContinueShoppingButton();

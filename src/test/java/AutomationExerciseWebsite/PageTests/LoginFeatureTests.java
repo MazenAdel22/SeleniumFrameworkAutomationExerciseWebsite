@@ -14,7 +14,7 @@ public class LoginFeatureTests extends BaseTest {
     @Test (dataProviderClass = DataProviderImp.class, dataProvider = "getValidData")
     public void signUpTestWithValidCridentials(HashMap<String,String> input) {
         SignUpAndLoginPage signUpAndLoginPage = homePage.goToSignUpLoginPage();
-        SignUpPage signUpPage = signUpAndLoginPage.fillSignUpForm(input.get("name"), input.get("email"));
+        SignUpPage signUpPage = signUpAndLoginPage.fillSignUpForm(input.get("name"), input.get("NewEmail"));
         signUpPage.fillSignUpForm( input.get("password"), input.get("day"), input.get("month"),
                 input.get("year"), input.get("firstName"), input.get("lastName"), input.get("company"),
                 input.get("address"), input.get("country"), input.get("state"), input.get("city"),
@@ -29,7 +29,7 @@ public class LoginFeatureTests extends BaseTest {
     public void loginTestWithValidCridentials(HashMap<String,String> input) {
         SignUpAndLoginPage signUpAndLoginPage = homePage.goToSignUpLoginPage();
         Assert.assertEquals(signUpAndLoginPage.getLoginToYourAccountText(), "Login to your account");
-        signUpAndLoginPage.fillLoginForm(input.get("email"), input.get("password"));
+        signUpAndLoginPage.fillLoginForm(input.get("NewEmail"), input.get("password"));
         Assert.assertTrue(homePage.isLoggedInAs(input.get("name")));
         homePage.DeleteAccount();
         Assert.assertEquals(signUpAndLoginPage.getSucessDeletedMessage(), "ACCOUNT DELETED!");

@@ -1,7 +1,8 @@
 [
   {
     "name": "Mazen Adel",
-    "email" : "AccountMazenTesting@pexiun.com",
+    "NewEmail" : "AccountMazenTesting@pexiunx.com",
+    "ExistingEmail" : "AccountMazenTesting@pexiun.com",
     "password" : "v99ztYi3He@5FmV" ,
     "day": "21",
     "month": "July",
